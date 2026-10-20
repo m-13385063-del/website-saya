@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Utama</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 22px;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+
+        nav {
+            background: #fff;
+            padding: 18px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #888;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 30px;
+            padding: 60px 8%;
+            min-height: 450px;
+        }
+
+        .intro {
+            flex: 1;
+            text-align: center;
+        }
+
+        .welcome {
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .name {
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+
+        .photo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .photo img {
+            width: 100%;
+            max-width: 320px;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #222;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WEBSITE PERIBADI</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">MENU UTAMA</a>
+        <a href="biodata.html">BIODATA</a>
+        <a href="hobi.html">HOBI</a>
+        <a href="keluarga.html">KELUARGA</a>
+    </nav>
+
+    <main class="hero">
+
+        <div class="intro">
+            <marquee behavior="alternate" scrollamount="5">
+                <div class="welcome">
+                    SELAMAT DATANG!
+                </div>
+            </marquee>
+
+            <h2 class="name">SALSABILA AMIRAH BINTI BASIR</h2>
+
+            <p>Selamat datang ke laman web peribadi saya.</p>
+            <p>Kenali saya dengan lebih lanjut melalui menu di atas.</p>
+        </div>
+
+        <div class="photo">
+            <img src="gambar.jpg" alt="Gambar saya">
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© Website Peribadi Saya</p>
+    </footer>
+
+</body>
+</html>
