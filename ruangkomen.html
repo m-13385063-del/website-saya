@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Komen</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header, footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px;
+            display: inline-block;
+            font-size: 13px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            box-sizing: border-box;
+            font: inherit;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            background: #111;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>RUANG KOMEN</h1>
+</header>
+
+<nav>
+    <a href="index.html">MENU UTAMA</a>
+    <a href="biodata.html">BIODATA</a>
+    <a href="hobi.html">HOBI</a>
+    <a href="keluarga.html">KELUARGA</a>
+    <a href="komen.html">RUANG KOMEN</a>
+</nav>
+
+<main>
+    <h2>TINGGALKAN KOMEN</h2>
+
+    <p>Sila isi ruangan di bawah untuk memberikan komen.</p>
+
+    <form action="mailto:m-13385063@moe-dl.edu.my" method="post"
+          enctype="text/plain">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="Nama"
+               placeholder="Masukkan nama anda" required>
+
+        <label for="komen">Komen:</label>
+        <textarea id="komen" name="Komen" rows="5"
+                  placeholder="Tulis komen anda di sini"
+                  required></textarea>
+
+        <button type="submit">Hantar Komen</button>
+    </form>
+</main>
+
+<footer>
+    <p>© Website Peribadi Saya</p>
+</footer>
+
+</body>
+</html>
